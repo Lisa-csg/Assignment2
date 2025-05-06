@@ -60,5 +60,10 @@ public class IntegerToRomanTest {
     }
     
     //Test con input <1 o >1000
-    
+    @Test
+    public void testIllegalArgumentException() {
+    assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(0));
+    assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
+    assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
+}
 }
