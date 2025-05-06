@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+    "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <module name="Header">
+        <property name="header" value="////////////////////////////////////////////////////////////////////\n// [Giulia] [Barzon] [2101074]\n// [Lisa] [Casagrande] [2116440]\n////////////////////////////////////////////////////////////////////"/>
+        <property name="fileExtensions" value="java"/>
+    </module>
+
+    <module name="FileLength"/>
+    <module name="FileTabCharacter"/>
+    <module name="LineLength">
+        <property name="max" value="100"/>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="IllegalImport"/>
+        <module name="BooleanExpressionComplexity"/>
+        <module name="CyclomaticComplexity"/>
+        <module name="MethodLength"/>
+        <module name="EmptyCatchBlock"/>
+        <module name="AvoidStarImport"/>
+        <module name="NeedBraces"/>
+    </module>
+</module>
